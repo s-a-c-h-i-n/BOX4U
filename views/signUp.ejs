@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+
+<html lang="en">
+	
+	<head>
+		<meta charset="utf-8"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1"/>
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"/>
+		<link rel="stylesheet" href="/CSS/style.css"/>
+		<link rel="shortcut icon" href="\images\Logos\Favicon\boxIcon.png"/>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+		<title>Box4U | Customer Registration</title>
+	</head>
+	<script type="text/javascript">
+		function validation(field){
+		   if(field.password.value != field.cpassword.value){
+		     alert("password does not match, Try again");
+		     return false;
+		   }
+		     return true;
+		  }
+	</script>
+	<body data-spy="scroll" data-target=".navbar">
+		<div class="container-fluid">	
+			<div class="row">
+				<div class="menuColumn" style="height: 100px;">
+					<p class="pHomeHead" style="text-indent: 0; font-family: Product Sans;top: 20px; left: 18%;font-size: 47px;"><a href="index.html"><img src="/images/Logos/trans2.png" alt="Main Logo" title="Box4U" style="float:left" hspace="10"/></a>
+                    <b>Customer Registration Form</b>
+                    <a href="#"><img src="\images\regForm.jpeg" alt="Registration Form" title="Registration Form" style="float:right" hspace="10"/></a>
+					</p>
+				</div>
+		<!--<div class="correction">-->
+		<!--	<nav class="navbar navbarDesign" data-spy="affix" data-offset-top="115">-->
+		<!--		  <ul class="nav navbar-nav">-->
+		<!--			<li class="active" ><a href="\">Home</a></li>-->
+		<!--			<li ><a href="\#menuTab">Menu</a></li>-->
+		<!--			<li class="dropdown" ><a class="dropdown-toggle" data-toggle="dropdown" href="#">Orders<span class="caret"></span></a>-->
+		<!--			  <ul class="dropdown-menu list-group" >-->
+		<!--				<li class="list list-group-item" ><a href="#">Corporate Orders</a></li>-->
+		<!--				<li class="list list-group-item" ><a href="#">Party Orders</a></li>-->
+		<!--			  </ul>-->
+		<!--			</li>-->
+		<!--			<li class="dropdown" ><a class="dropdown-toggle" data-toggle="dropdown" href="#">About Us<span class="caret"></span></a>-->
+		<!--				<ul class="dropdown-menu list-group" >-->
+		<!--				  <li class="list list-group-item" ><a href="#">The Team</a></li>-->
+		<!--				  <li class="list list-group-item" ><a href="#">The Website</a></li>-->
+		<!--				  <li class="list list-group-item disabled" ><a href="#">The Mobile App</a></li>-->
+		<!--				</ul>-->
+		<!--			</li>-->
+		<!--			<li class="dropdown" ><a class="dropdown-toggle" data-toggle="dropdown" href="#">Contact<span class="caret"></span></a>-->
+		<!--				<ul class="dropdown-menu list-group" >-->
+		<!--				  <li class="list list-group-item" ><a href="#">E-mail</a></li>-->
+		<!--				  <li class="list list-group-item" ><a href="#">Office Postbox</a></li>-->
+		<!--				  <li class="list list-group-item" ><a href="#">Hotline</a></li>-->
+		<!--				</ul>-->
+		<!--			</li>-->
+  <!--      </ul>-->
+  <!--      <form class="navbar-form navbar-right" style="position: absolute; right: 20px;" action="">-->
+  <!--        <div class="input-group">-->
+  <!--          <input type="text" class="form-control textStyle" style="color: darkred;" placeholder="Search">-->
+  <!--          <div class="input-group-btn">-->
+  <!--            <button class="btn btnStyle" style="width: 40px;" type="submit">-->
+  <!--              <i class="glyphicon glyphicon-search"></i>-->
+  <!--            </button>-->
+  <!--          </div>-->
+  <!--        </div>-->
+  <!--      </form>-->
+		<!--	  </nav>-->
+  <!--          </div>-->
+            <div style="height: 20px;"></div>
+            <div class="container">
+
+                    <form class="well form-horizontal formStyle" action="/insert" method="post" id="contact_form" onsubmit="return validation(this)">
+                <fieldset>
+                
+                <!-- Form Name -->
+                <legend><center><h2 style="color: darkred;"><b>Customer Details</b></h2></center></legend><br>
+                
+                <!-- Text input-->
+                
+                <div class="form-group"><p style="color:black" ><center><%=error%></center></p>
+                  <label class="col-md-4 control-label">First Name</label>  
+                  <div class="col-md-4 inputGroupContainer">
+                  <div class="input-group">
+                  <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+                  <input  name="fname" required placeholder="First Name" class="form-control"  type="text">
+                    </div>
+                  </div>
+                </div>
+                
+                <!-- Text input-->
+                 
+                <div class="form-group">
+                  <label class="col-md-4 control-label" >Last Name</label> 
+                    <div class="col-md-4 inputGroupContainer">
+                    <div class="input-group">
+                  <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+                  <input name="lname" required placeholder="Last Name" class="form-control"  type="text">
+                    </div>
+                  </div>
+                </div>
+                
+                  <div class="form-group"> 
+                  <label class="col-md-4 control-label">City / Region</label>
+                    <div class="col-md-4 selectContainer">
+                    <div class="input-group">
+                        <span class="input-group-addon"><i class="glyphicon glyphicon-list"></i></span>
+                    <select name="department" required class="form-control selectpicker">
+                      <option>Select your City or Region</option>
+                      <option value="Mumbai">Mumbai</option>
+                      <option value="Pune">Pune</option>
+                      <option value="Thane">Thane</option>
+                      <option value="Navi Mumbai">Navi Mumbai</option>
+                      <option value="Bangalore">Bangalore</option>
+                      <option value="Delhi">New Delhi</option>
+                      <option value="Chennai">Chennai</option>
+                      <option value="Kolkata">Kolkata</option>
+                    </select>
+                  </div>
+                </div>
+                </div>
+                
+                <!-- Text input-->
+                <div class="form-group">
+                        <label class="col-md-4 control-label">E-Mail ID</label>  
+                          <div class="col-md-4 inputGroupContainer">
+                          <div class="input-group">
+                              <span class="input-group-addon"><i class="glyphicon glyphicon-envelope"></i></span>
+                        <input name="email" required placeholder="E-Mail Address" class="form-control"  type="text">
+                          </div>
+                        </div>
+                      </div>
+
+                <!-- Text input-->
+                
+                <div class="form-group">
+                  <label class="col-md-4 control-label" >Password</label> 
+                    <div class="col-md-4 inputGroupContainer">
+                    <div class="input-group">
+                  <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+                  <input name="password" required placeholder="Password" class="form-control"  type="password">
+                    </div>
+                  </div>
+                </div>
+                
+                <!-- Text input-->
+                
+                <div class="form-group">
+                  <label class="col-md-4 control-label" >Confirm Password</label> 
+                    <div class="col-md-4 inputGroupContainer">
+                    <div class="input-group">
+                  <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+                  <input name="cpassword" required placeholder="Confirm Password" class="form-control"  type="password">
+                    </div>
+                  </div>
+                </div>
+                
+                <!-- Text input-->
+                       
+                <div class="form-group">
+                  <label class="col-md-4 control-label">Contact No.</label>  
+                    <div class="col-md-4 inputGroupContainer">
+                    <div class="input-group">
+                        <span class="input-group-addon"><i class="glyphicon glyphicon-earphone"></i></span>
+                  <input name="mobile" minlength=10 maxlength=10 required placeholder="(+91)" class="form-control" type="text">
+                    </div>
+                  </div>
+                </div>
+                
+                <!-- Select Basic -->
+                
+                <!-- Success message
+                <div class="alert alert-success" role="alert" id="success_message">Success <i class="glyphicon glyphicon-thumbs-up"></i></div>-->
+                
+                <!-- Button -->
+                <div class="form-group">
+                  <label class="col-md-4 control-label"></label>
+                  <div class="col-md-4"><br>
+                    <button class="btnStyle" style="width: 150px;height: 50px;" type="submit" class="btn" onsubmit="validation(this)">SIGN UP!<span class="glyphicon glyphicon-send"></span></button>
+                  </div>
+                </div>
+                <a href="\"><p style="text-align: center;color: darkred;">If you already have an Account, Click Here to Log In!</p></a>
+                
+                </fieldset>
+                </form>
+                </div>
+                    </div><!-- /.container -->
+                    <footer class="page-footer footerStyle">
+                            <div class="container-fluid text-center text-md-left">
+                                <div class="row">
+                                    <div class="col-md-4 mt-md-0 mt-3">
+                                        <br/><img src="/images/Logos/trans1.png" title="Main Logo"/>
+                                        <h5 class="text-uppercase"><b>From the Box4U Team</b></h5>
+                                        <p> Box4U, an online food ordering service was developed by Tanmay Bhagwat, Sachin Kamath, Jayesh Lokhande &amp; Jerin Thomas, students of CSE at RAIT.</p>
+                                    </div>
+                                    <hr class="clearfix w-100 d-md-none pb-6">
+                                    <div class="col-md-4 mb-md-0 mb-3">
+                                            <h5 class="text-uppercase"><b>Links</b></h5>
+                                            <ul class="list-unstyled" style="background: tomato">
+                                                <li>
+                                                    <a href="/">Home</a>
+                                                </li>
+                                                <li>
+                                                    <a href="/#menuTab">Menu</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#!">About Us</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#!">Contact Us</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class=" offset-md-3 col-md-4 mb-md-0 mb-3">
+                                            <h5 class="text-uppercase"><b>Tech Stack</b></h5>
+                                            <ul class="list-unstyled" style="background: tomato">
+                                                <li>
+                                                    <a href="https://en.wikipedia.org/wiki/HTML">HTML5</a>
+                                                </li>
+                                                <li>
+                                                    <a href="https://en.wikipedia.org/wiki/Cascading_Style_Sheets">CSS3</a>
+                                                </li>
+                                                <li>
+                                                    <a href="https://getbootstrap.com">Bootstrap 3</a>
+                                                </li>
+                                                <li>
+                                                    <a href="https://nodejs.org/en/">Node JS</a>
+                                                </li>
+                                                <li>
+                                                    <a href="https://www.mysql.com">mySQL DB</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                </div>
+                            </div>
+                            <div class="footer-copyright text-center py-3">© 2018 Copyright:
+                                <a href="/"> Box4U.com</a>
+                            </div>
+                        </footer>
+                    </div>
+                </body>
+                </html>

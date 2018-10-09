@@ -1,0 +1,499 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    
+    <head>
+        <meta charset="utf-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1"/>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"/>
+        <link rel="shortcut icon" href="\images\Logos\Favicon\boxIcon.png"/>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="/CSS/style.css"/>
+        <title>Box4U | Soups</title>
+    </head>
+    <body onload="getLocation()" data-spy=scroll data-target=.navbar><!-- Check the name -->
+        <script type="text/javascript">
+            // Code for snippet
+            $(document).on('click', '.number-spinner button', function () {    
+            var btn = $(this),
+                oldValue = btn.closest('.number-spinner').find('input').val().trim(),
+                newVal = 0;
+            
+            if (btn.attr('data-dir') == 'up') {
+                newVal = parseInt(oldValue) + 1;
+            } else {
+                if (oldValue > 1) {
+                    newVal = parseInt(oldValue) - 1;
+                } else {
+                    newVal = 1;
+                }
+            }
+            btn.closest('.number-spinner').find('input').val(newVal);
+            });
+        </script>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="menuColumn">
+                <p class="pHomeHead" style="left: 23%; top: 20px; text-indent: 10px;font-family: Product Sans;">
+                    <a href="\"><img src="images\Logos\trans2.png" alt="Main Logo" vspace="10" title="Box4U" style="float:left" hspace="20"/></a>
+                    <b style="font-size : 3vw">On the Menu - Soups</b>
+                </p>
+                </div>
+                <div class="correction">
+                    <nav class="navbar navbarDesign navbar-expand-lg navbar-light bg-light" data-spy="affix" data-offset-top="115">
+                        <div class="container">
+                            <div class="navbar-header">
+                                <button style="background: red;     padding: 10px 10px; color: white;" type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                                    <span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span>
+                              </button>
+                                <a class="navbar-brand" href="\">Home</a>
+                            </div>
+                            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                                <ul class="nav navbar-nav">
+                                    <li ><a href="/homepage/#menuTab">Menu</a></li>
+                                    <li class="dropdown" ><a class="dropdown-toggle" data-toggle="dropdown" href="#">Orders<span class="caret"></span></a>
+                                        <ul class="dropdown-menu list-group" >
+                                            <li class="list list-group-item" ><a href="#">Corporate Orders</a></li>
+                                            <li class="list list-group-item" ><a href="#">Party Orders</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="dropdown" ><a class="dropdown-toggle" data-toggle="dropdown" href="#">About Us<span class="caret"></span></a>
+                                        <ul class="dropdown-menu list-group" >
+                                            <li class="list list-group-item" ><a href="#">The Team</a></li>
+                                            <li class="list list-group-item" ><a href="#">The Website</a></li>
+                                            <li class="list list-group-item disabled" ><a href="#">The Mobile App</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="dropdown" ><a class="dropdown-toggle" data-toggle="dropdown" href="#">Contact<span class="caret"></span></a>
+                                        <ul class="dropdown-menu list-group" >
+                                            <li class="list list-group-item" ><a href="#">E-mail</a></li>
+                                            <li class="list list-group-item" ><a href="#">Office Postbox</a></li>
+                                            <li class="list list-group-item" ><a href="#">Hotline</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                                <form class="navbar-form navbar-right" style="position: absolute; right: 20px;" action="">
+                                    <div class="input-group">
+                                        <input type="text" class="form-control textStyle" style="color: darkred;" placeholder="Search">
+                                        <div class="input-group-btn">
+                                          <button class="btn btnStyle" style="width: 40px;" type="submit">
+                                          <i class="glyphicon glyphicon-search"></i>
+                                          </button>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </nav>
+                </div>
+
+                <div class="container-fluid">
+                    <div class="headMenu">
+                        <p class="row" style="margin-top: 30px">-----Soups-----</p>
+						<div style="height: 25px;"></div>
+                    </div>
+                </div>
+                <!-- <div class="container-fluid">
+                            <div class="row">
+                                <p class="headMenu" style="margin-top: 40px;font-size: 25px;">---VEG---</p>
+                            </div>
+                        </div> -->
+
+                <div class="container">
+                    <div class="row" style="margin-top: 30">
+                        <div class="col-lg-4 col-md-6 col-sm-6">
+                            <!-- Cream of Tomato -->
+                            <div class="thumbnail">
+                                <a href="#tomatoModal" data-toggle="modal" data-target="#tomatoModal">
+                                    <img class=" img-responsive" style="width: 380px; height: 278px;" alt="Cream of Tomato Soup" src="/images/tomatoCream.jpg" title="Cream of Tomato Soup" data-target="#tomatoModal"/>
+                                    <div class="bottom-left">Cream of Tomato</div>
+                                </a>
+                            </div>
+                        </div>
+                        <!-- Modal -->
+                        <div class="modal fade" id="tomatoModal" tabindex="-1" role="dialog">
+                          <div class="modal-dialog">
+                            <div class="modal-content">
+                              <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                                <h4 class="modal-title">Cream of Tomato Soup &nbsp &nbsp &nbsp &nbsp ₹45</h4>
+                              </div>
+                              <div class="modal-body">
+                                <img class="img-responsive" style="width: 380px; height: 278px;" alt="tomato" src="/images/tomatoCream.jpg" title="tomato"/>
+                                <br>
+                                <div class="row" id="cart">
+                                    <div class="col-lg-5"><br>
+                                        <div class="input-group number-spinner">
+                                            <span class="input-group-btn">
+                                                <button class="btn btn-default" data-dir="dwn"><span class="glyphicon glyphicon-minus"></span></button>
+                                            </span>
+                                            <input type="text" class="form-control text-center" value="1">
+                                            <span class="input-group-btn">
+                                                <button class="btn btn-default" data-dir="up"><span class="glyphicon glyphicon-plus"></span></button>
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <div class=" col-lg-7">
+                                        <img  src="/images/Cart/cart1.png">
+                                    </div><br>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+
+                        <!-- Spinach-->
+                        <div class="col-lg-4 col-md-6 col-sm-6">
+                            <div class="thumbnail">
+                                <a href="#spinachModal" data-toggle="modal" data-target="#spinachModal">
+                                    <img class="img-responsive" style="width: 380px; height: 278px;" alt="Spinach & Corn Soup" src="/images/spinachCorn.jpg" title="Spinach & Corn Soup"/>
+                                    <div class="bottom-left">Spinach &amp; Corn Soup</div>
+                                </a>
+                            </div>
+                        </div>
+                        <!-- Modal -->
+                        <div class="modal fade" id="spinachModal" tabindex="-1" role="dialog">
+                          <div class="modal-dialog">
+                            <div class="modal-content">
+                              <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                                <h4 class="modal-title">Spinach & Corn Soup &nbsp &nbsp &nbsp &nbsp ₹65</h4>
+                              </div>
+                              <div class="modal-body"> 
+                                <img class="img-responsive" style="width: 380px; height: 278px;" alt="Spinach & Corn Soup" src="/images/spinachCorn.jpg" title="Spinach & Corn Soup"/>
+                                <br>
+                                <div class="row" id="cart">
+                                    <div class="col-lg-5"><br>
+                                        <div class="input-group number-spinner">
+                                            <span class="input-group-btn">
+                                                <button class="btn btn-default" data-dir="dwn"><span class="glyphicon glyphicon-minus"></span></button>
+                                            </span>
+                                            <input type="text" class="form-control text-center" value="1">
+                                            <span class="input-group-btn">
+                                                <button class="btn btn-default" data-dir="up"><span class="glyphicon glyphicon-plus"></span></button>
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-7">
+                                        <img id="cart" src="/images/Cart/cart1.png">
+                                    </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+
+                       <!--Cream Pea -->
+                        <div class="col-lg-4 col-md-6 col-sm-6">
+                            <div class="thumbnail">
+                                <a href="#creampeaModal" data-toggle="modal" data-target="#creampeaModal">
+                                    <img class="img-responsive" style="width: 380px; height: 278px;" alt="Cream Pea Soup" src="/images/peaCream.jpg" title="Cream Pea Soup"/>
+                                    <div class="bottom-left">Cream Pea Soup</div>
+                                </a>
+                            </div>
+                        </div>
+                        <!-- Modal -->
+                        <div class="modal fade" id="creampeaModal" tabindex="-1" role="dialog">
+                          <div class="modal-dialog">
+                            <div class="modal-content">
+                              <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                                <h4 class="modal-title">Cream Pea Soup &nbsp &nbsp &nbsp &nbsp ₹75</h4>
+                              </div>
+                              <div class="modal-body"> 
+                                <img class="img-responsive" style="width: 380px; height: 278px;" alt="Cream Pea Soup" src="/images/peaCream.jpg" title="Cream Pea Soup"/>
+                                <br>
+                                <div class="row" id="cart">
+                                    <div class="col-lg-5"><br>
+                                        <div class="input-group number-spinner">
+                                            <span class="input-group-btn">
+                                                <button class="btn btn-default" data-dir="dwn"><span class="glyphicon glyphicon-minus"></span></button>
+                                            </span>
+                                            <input type="text" class="form-control text-center" value="1">
+                                            <span class="input-group-btn">
+                                                <button class="btn btn-default" data-dir="up"><span class="glyphicon glyphicon-plus"></span></button>
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-7">
+                                        <img id="cart" src="/images/Cart/cart1.png">
+                                    </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+
+                        <!-- paneerButter -->
+                        <div class="col-lg-4 col-md-6 col-sm-6">
+                            <div class="thumbnail">
+                                <a href="#potatoModal" data-toggle="modal" data-target="#potatoModal">
+                                    <img class="img-responsive" style="width: 380px; height: 278px;" alt="Potato Veggie Soup" src="/images/potatoVeggie.jpg" title="Potato Veggie Soup"/>
+                                    <div class="bottom-left">Potato Veggie Soup</div>
+                                </a>
+                            </div>
+                        </div>
+                        <!-- Modal -->
+                        <div class="modal fade" id="potatoModal" tabindex="-1" role="dialog">
+                          <div class="modal-dialog">
+                            <div class="modal-content">
+                              <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                                <h4 class="modal-title">Potato Veggie Soup &nbsp &nbsp &nbsp &nbsp ₹55</h4>
+                              </div>
+                              <div class="modal-body"> 
+                                <img class="img-responsive" style="width: 380px; height: 278px;" alt="Potato Veggie Soup" src="/images/potatoVeggie.jpg" title="Potato Veggie Soup"/>
+                                <br>
+                                <div class="row" id="cart">
+                                    <div class="col-lg-5"><br>
+                                        <div class="input-group number-spinner">
+                                            <span class="input-group-btn">
+                                                <button class="btn btn-default" data-dir="dwn"><span class="glyphicon glyphicon-minus"></span></button>
+                                            </span>
+                                            <input type="text" class="form-control text-center" value="1">
+                                            <span class="input-group-btn">
+                                                <button class="btn btn-default" data-dir="up"><span class="glyphicon glyphicon-plus"></span></button>
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-7">
+                                        <img id="cart" src="/images/Cart/cart1.png">
+                                    </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+
+                        <!-- Veg Clear Soup -->
+                        <div class="col-lg-4 col-md-6 col-sm-6">
+                            <div class="thumbnail">
+                                <a href="#vegClearModal" data-toggle="modal" data-target="#vegClearModal">
+                                    <img class="img-responsive" style="width: 380px; height: 278px;" alt="Veg Clear Soup" src="/images/soup.jpeg" title="Veg Clear Soup"/>
+                                    <div class="bottom-left">Veg Clear Soup</div>
+                                </a>
+                            </div>
+                        </div>
+                        <!-- Modal -->
+                        <div class="modal fade" id="vegClearModal" tabindex="-1" role="dialog">
+                          <div class="modal-dialog">
+                            <div class="modal-content">
+                              <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                                <h4 class="modal-title">Veg Clear Soup &nbsp &nbsp &nbsp &nbsp ₹50</h4>
+                              </div>
+                              <div class="modal-body"> 
+                                <img class="img-responsive" style="width: 380px; height: 278px;" alt="Veg Clear Soup" src="/images/soup.jpeg" title="Veg Clear Soup"/>
+                                <br>
+                                <div class="row" id="cart">
+                                    <div class="col-lg-5"><br>
+                                        <div class="input-group number-spinner">
+                                            <span class="input-group-btn">
+                                                <button class="btn btn-default" data-dir="dwn"><span class="glyphicon glyphicon-minus"></span></button>
+                                            </span>
+                                            <input type="text" class="form-control text-center" value="1">
+                                            <span class="input-group-btn">
+                                                <button class="btn btn-default" data-dir="up"><span class="glyphicon glyphicon-plus"></span></button>
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-7">
+                                        <img id="cart" src="/images/Cart/cart1.png">
+                                    </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+
+                        <!-- Veg Clear Modal -->
+                        <div class="col-lg-4 col-md-6 col-sm-6">
+                            <div class="thumbnail">
+                                <a href="#carrotModal" data-toggle="modal" data-target="#carrotModal">
+                                    <img class="img-responsive" style="width: 380px; height: 278px;" alt="Carrot Ginger Soup" src="/images/carrotGinger.jpg" title="Carrot Ginger Soup"/>
+                                    <div class="bottom-left">Carrot Ginger Soup</div>
+                                </a>
+                            </div>
+                        </div>
+                        <!-- Modal -->
+                        <div class="modal fade" id="carrotModal" tabindex="-1" role="dialog">
+                          <div class="modal-dialog">
+                            <div class="modal-content">
+                              <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                                <h4 class="modal-title">Carrot Ginger Soup &nbsp &nbsp &nbsp &nbsp ₹60</h4>
+                              </div>
+                              <div class="modal-body"> 
+                                <img class="img-responsive" style="width: 380px; height: 278px;" alt="Carrot Ginger Soup" src="/images/carrotGinger.jpg" title="Carrot Ginger Soup"/>
+                                <br>
+                                <div class="row" id="cart">
+                                    <div class="col-lg-5"><br>
+                                        <div class="input-group number-spinner">
+                                            <span class="input-group-btn">
+                                                <button class="btn btn-default" data-dir="dwn"><span class="glyphicon glyphicon-minus"></span></button>
+                                            </span>
+                                            <input type="text" class="form-control text-center" value="1">
+                                            <span class="input-group-btn">
+                                                <button class="btn btn-default" data-dir="up"><span class="glyphicon glyphicon-plus"></span></button>
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-7">
+                                        <img id="cart" src="/images/Cart/cart1.png">
+                                    </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+						<div class="col-lg-4 col-lg-push-2 col-md-6 col-sm-6">
+                            <div class="thumbnail">
+                                <a href="#shrimpModal" data-toggle="modal" data-target="#shrimpModal">
+                                    <img class="img-responsive" style="width: 380px; height: 278px;" alt="Fresh Shrimp Soup" src="/images/prawnSoup.jpeg" title="Fresh Shrimp Soup"/>
+                                    <div class="bottom-left">Fresh Shrimp Soup</div>
+                                </a>
+                            </div>
+                        </div>
+                        <!-- Modal -->
+                        <div class="modal fade" id="shrimpModal" tabindex="-1" role="dialog">
+                          <div class="modal-dialog">
+                            <div class="modal-content">
+                              <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                                <h4 class="modal-title">Fresh Shrimp Soup &nbsp &nbsp &nbsp &nbsp ₹80</h4>
+                              </div>
+                              <div class="modal-body"> 
+                                <img class="img-responsive" style="width: 380px; height: 278px;" alt="Fresh Shrimp Soup" src="/images/prawnSoup.jpeg" title="Fresh Shrimp Soup"/>
+                                <br>
+                                <div class="row" id="cart">
+                                    <div class="col-lg-5"><br>
+                                        <div class="input-group number-spinner">
+                                            <span class="input-group-btn">
+                                                <button class="btn btn-default" data-dir="dwn"><span class="glyphicon glyphicon-minus"></span></button>
+                                            </span>
+                                            <input type="text" class="form-control text-center" value="1">
+                                            <span class="input-group-btn">
+                                                <button class="btn btn-default" data-dir="up"><span class="glyphicon glyphicon-plus"></span></button>
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-7">
+                                        <img id="cart" src="/images/Cart/cart1.png">
+                                    </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+
+                        <!-- Miso Chicken Soup -->
+                        <div class="col-lg-4 col-lg-push-2 col-md-6 col-md-push-3 col-sm-6 col-sm-push-3">
+                            <div class="thumbnail">
+                                <a href="#MisoChickenSoupModal" data-toggle="modal" data-target="#MisoChickenSoupModal">
+                                    <img class="img-responsive" style="width: 380px; height: 278px;" alt="Miso Chicken Soup" src="/images/misoChicken.jpg" title="Miso Chicken Soup"/>
+                                    <div class="bottom-left">Miso Chicken Soup</div>
+                                </a>
+                            </div>
+                        </div>
+                        <!-- Modal -->
+                        <div class="modal fade" id="MisoChickenSoupModal" tabindex="-1" role="dialog">
+                          <div class="modal-dialog">
+                            <div class="modal-content">
+                              <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                                <h4 class="modal-title">Miso Chicken Soup &nbsp &nbsp &nbsp &nbsp ₹90</h4>
+                              </div>
+                              <div class="modal-body"> 
+                                <img class="img-responsive" style="width: 380px; height: 278px;" alt="Miso Chicken Soup" src="/images/misoChicken.jpg" title="Miso Chicken Soup"/>
+                                <br>
+                                <div class="row" id="cart">
+                                    <div class="col-lg-5"><br>
+                                        <div class="input-group number-spinner">
+                                            <span class="input-group-btn">
+                                                <button class="btn btn-default" data-dir="dwn"><span class="glyphicon glyphicon-minus"></span></button>
+                                            </span>
+                                            <input type="text" class="form-control text-center" value="1">
+                                            <span class="input-group-btn">
+                                                <button class="btn btn-default" data-dir="up"><span class="glyphicon glyphicon-plus"></span></button>
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-7">
+                                        <img id="cart" src="/images/Cart/cart1.png">
+                                    </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                    </div> <!-- row end -->   
+					<p class="headMenu">----------------</p><br/>
+                </div> <!-- container end -->
+            </div> <!-- row end -->
+        </div> <!-- container-fluid end -->
+        <!-- Button trigger modal -->
+        <script
+                   src="https://code.jquery.com/jquery-3.3.1.js"
+                   integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+                   crossorigin="anonymous"></script>
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    </body>
+    <!-- Footer -->
+<footer class="page-footer footerStyle">
+    <div class="container-fluid text-center text-md-left">
+        <div class="row">
+            <div class="col-md-4 mt-md-0 mt-3">
+                <br/><img src="images/Logos/trans1.png" title="Main Logo"/>
+                <h5 class="text-uppercase"><b>From the Box4U Team</b></h5>
+                <p> Box4U, an online food ordering service was developed by Tanmay Bhagwat, Sachin Kamath, Jayesh Lokhande &amp; Jerin Thomas - Students of CSE at RAIT.</p>
+            </div>
+            <hr class="clearfix w-100 d-md-none pb-6">
+            <div class="col-md-4 mb-md-0 mb-3">
+                    <h5 class="text-uppercase"><b>Links</b></h5>
+                    <ul class="list-unstyled" style="background: tomato">
+                        <li>
+                            <a href="\homepage">Home</a>
+                        </li>
+                        <li>
+                            <a href="\#menuTab">Menu</a>
+                        </li>
+                        <li>
+                            <a href="#!">About Us</a>
+                        </li>
+                        <li>
+                            <a href="#!">Contact Us</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class=" offset-md-3 col-md-4 mb-md-0 mb-3">
+                    <h5 class="text-uppercase"><b>Tech Stack</b></h5>
+                    <ul class="list-unstyled" style="background: tomato">
+                        <li>
+                            <a href="https://en.wikipedia.org/wiki/HTML">HTML5</a>
+                        </li>
+                        <li>
+                            <a href="https://en.wikipedia.org/wiki/Cascading_Style_Sheets">CSS3</a>
+                        </li>
+                        <li>
+                            <a href="https://getbootstrap.com">Bootstrap 3</a>
+                        </li>
+                        <li>
+                            <a href="https://nodejs.org/en/">Node JS</a>
+                        </li>
+                        <li>
+                            <a href="https://www.mysql.com">mySQL DB</a>
+                        </li>
+                    </ul>
+                </div>
+        </div>
+    </div>
+    <div class="footer-copyright text-center py-3" style="background: tomato">© 2018 Copyright:
+        <a href="#"> Box4U.com</a>
+    </div>
+</footer>
+</html>

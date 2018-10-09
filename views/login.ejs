@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+
+<html lang="en">
+	
+	<head>
+		<meta charset="utf-8"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1"/>
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"/>
+		<link rel="stylesheet" href="/CSS/styleLogin.css"/>
+		<link rel="shortcut icon" href="\images\Logos\Favicon\boxIcon.png"/>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+		<script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=false"></script>
+		<title>Box4U | Online Food Delivery</title>
+    </head>
+    
+    <body>
+            <div>
+                <img style="background-color:tomato; width: 1326px; height: 637px; opacity: 0.72;" src="\images\pexels-photo-958545.jpeg" alt="Main Background"/>
+                    <form action="/check" style="font-family: 'Product Sans';" class="textcontainer" method="post">
+                      <h1 style="text-align: center;">SIGN IN</h1><br/>
+                      <p style="color:red;" ><%=error%></p>
+                  
+                      <label for="email"><b>Email</b></label>
+                      <input type="text" placeholder="Enter Email" name="email" required>
+                  
+                      <label for="psw"><b>Password</b></label>
+                      <input type="password" placeholder="Enter Password" name="password" required><br>
+                  
+                      <button type="submit" class="btn">Login</button>
+                    </form>
+                </div>
+                <p style="position: absolute; top: 525px; left: 37.5%; opacity: 0.9; color: white; font-family: 'Product Sans';" class="bg">Don't have an account? <a href="/signup">Create a new account!</a></p>
+            </div>
+    </body>

@@ -1,0 +1,73 @@
+@font-face {
+    font-family: 'Product Sans';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Open Sans'), local('OpenSans'), url(https://fonts.gstatic.com/s/productsans/v5/HYvgU2fE2nRJvZ5JFAumwegdm0LZdjqr5-oayXSOefg.woff2) format('woff2');
+  }
+
+body, html {
+    height: 100%;
+  }
+  
+  * {
+    box-sizing: border-box;
+  }
+  
+  .bg {
+    background-color: black;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+
+  .bgImg {
+    /* The image used */
+    background-image: url("pexels-photo-958545.jpeg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+  }
+  
+  /* Add styles to the form container */
+  .textcontainer {
+    position: absolute;
+    left: 33%;
+    top: 90px; 
+    margin: 20px;
+    max-width: 400px;
+    padding: 25px;
+    background-color: mistyrose;
+  }
+  
+  /* Full-width input fields */
+    input[type=text], input[type=password] {
+    width: 100%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    border: none;
+    background: mistyrose;
+  }
+  
+  input[type=text]:focus, input[type=password]:focus {
+    background-color: #ddd;
+    outline: none;
+  }
+  
+  /* Set a style for the submit button */
+  .btn {
+    background-color: darkred;
+    color: white;
+    padding: 16px 20px;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    opacity: 0.9;
+    transition-duration: 0.3s;
+  }
+  
+  .btn:hover {
+    background-color: white;
+	color: darkred;
+  }
