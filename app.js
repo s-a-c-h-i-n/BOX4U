@@ -126,7 +126,7 @@ app.get("/curries", function(req,res){
     res.render("curries");
 });
 app.get("/signup", function(req,res){
-    res.render("signUp", {error: " "});
+    res.render("signUp", {error: ""});
 });
 
 // Connection for Port
