@@ -22,15 +22,16 @@ app.post('/insert', function(req, res) {
 
   var data = new User(item);
   data.save((err, user)=>{
-    //   if(err)
-    //     {
-    //         console.log(err);
-    //     }
+      if(err)
+        {
+            console.log("LIGMA");
+            
         if(err.message.indexOf("11000") != -1)
         {
             // run some code here //
             console.log("ERROR", "ID already taken");
             res.render("signUp", {error: "Email Already exists!!"});
+        }
         }
         else
         {
